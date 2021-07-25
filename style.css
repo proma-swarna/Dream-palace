@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&family=Cormorant+Upright:wght@300&family=Teko&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -10,8 +11,13 @@ img{
     vertical-align: middle;
     max-width: 100%;
 }
-h1,h2,h3,h4,h5,h6,p,a,li{
+h1,h2,h3,h4,h5,h6,a{
     text-transform: capitalize;
+    font-family: 'Amaranth', sans-serif;
+}
+p,li{
+    text-transform: capitalize;
+    font-family: 'Cormorant Upright', serif;
 }
 ul{
     list-style: none;
@@ -149,8 +155,10 @@ a{
     text-align: left;
 }
 /* header area start */
-.header{
-    position: relative;
+.header {
+	position: absolute;
+	width: 100%;
+	z-index: 9;
 }
 .logo {
 	padding: 7px 5px;
@@ -158,7 +166,7 @@ a{
 }
 .social-icon {
 	padding: 11px 5px;
-	background-color: #584D7C;
+	background-color: #191E24;
 }
 .social-icon i {
 	font-size: 14px;
@@ -171,6 +179,7 @@ a{
 .logo a {
 	font-size: 22px;
 	color: #fff;
+    font-weight: bold;
 }
 .pd-0 {
 	padding-right: 0;
@@ -180,11 +189,8 @@ a{
 	padding: 230px 50px;
     color: #fff;
 }
-.back-clr {
-	background-color: #1E1E1E;
-}
 .side-menu {
-	background-color: #333;
+	background-color: #191E24;
 	width: 170px;
 	position: fixed;
     float: right;
@@ -231,15 +237,46 @@ a{
 }
 .bar {
 	position: absolute;
-	left: -35px;
-	top: 15px;
+	left: -64px;
+	top: -3px;
+	border: 3px solid #fff;
 }
 .bar.close i::before{
     content: '\f00d';
 }
 .bar i {
-	font-size: 25px;
-    cursor: pointer;
+	font-size: 22px;
+	cursor: pointer;
+	background-color: #951133;
+	padding: 8px 21px;
+	color: #fff;
 }
 
 /* header area end */
+/* banner area start */
+.banner{
+    position: relative;
+}
+.banner-left {
+	padding: 272px 30px;
+	background-color: #15505F;
+	color: #fff;
+}
+.banner-left h4{
+    font-weight: bold;
+    font-size: 27px;
+    padding-bottom: 8px;
+}
+.banner-left p {
+	font-size: 17px;
+}
+.banner-right{
+    
+}
+.single-banner {
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover; 
+}
+/* banner area end */

@@ -429,16 +429,16 @@ a{
 .breadcum{
     background-color: #191E24;
 }
-.breadcum i,.team-font i {
+.breadcum i,.team-font i,.services i {
     color: #951133;
     font-size: 25px;
 }
-.breadcum h4 {
+.breadcum h4,.services h4 {
     color: #fff;
     font-size: 28px;
     font-weight: bold;
   }
-.breadcum span {
+.breadcum span,.services span {
     color: #fff;
   }
 .breadcum-details {
@@ -477,8 +477,8 @@ a{
     font-size: 20px;
     border: 1px solid transparent;
 }
-  /* breadcum area end */
-  /* team area start */
+/* breadcum area end */
+/* team area start */
   .team{
       position: relative;
   }
@@ -486,5 +486,145 @@ a{
     font-size: 28px;
     font-weight: bold;
 }
-
+.team-details {
+	padding: 20px;
+	position: relative;
+	background-color: #ccc;
+	transition: .5s;
+	border-radius: 0px 90px;
+}
+.team-details:hover {
+	background-color: #15505F;
+	color: #fff;
+	border-radius: 90px 0px;
+	box-shadow: 5px 7px 2px 1px #000;
+}
+.team-details:hover.team-details img{
+	border-radius: 50%;
+}
+.team-details::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 3px;
+	height: 25px;
+	background-color: #858585;
+}
+.team-details::after {
+	content: "";
+	position: absolute;
+	top: -11px;
+	left: 11px;
+	width: 3px;
+	height: 25px;
+	background-color: #858585;
+	transform: rotate(90deg);
+}
+.team-details p{
+	position: relative;
+	font-size: 16px;
+}
+.team-details p::before {
+	content: "";
+	position: absolute;
+	bottom: -60px;
+	right: -19px;
+	width: 3px;
+	height: 25px;
+	background-color: #858585;
+}
+.team-details p::after {
+	content: "";
+	position: absolute;
+	bottom: -71px;
+	right: -5px;
+	width: 3px;
+	height: 25px;
+	background-color: #858585;
+	transform: rotate(90deg);
+}
+.team-details span {
+	font-size: 13px;
+}
+.team-details i {
+	padding: 4px 8px;
+	background-color: #141B24;
+	color: #CCCCCC;
+	transition: .3s;
+}
+.team-details i:hover{
+	transform: translateY(-6px);
+}
 /* team area end */
+/* services area start */
+.services {
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+}
+.services::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #333;
+	width: 100%;
+	z-index: -1;
+	opacity: 0.9;
+	height: 100%;
+}
+.services-details {
+	color: #fff;
+  }
+.services-details h5 {
+	padding: 8px 0px 8px 0px;
+	font-weight: bold;
+	text-align: center;
+	background-color: #15505F;
+}
+.services-details p {
+	padding: 10px 25px;
+	text-align: center;
+}
+.button2 {
+	position: relative;
+}
+.button2 a:hover {
+	background-color: #951133;
+	border: 1px solid transparent;
+	box-shadow: 3px 2px 1px 0px #000;
+    transform: scale(1);
+}
+.button2 a {
+	display: inline-block;
+	padding: 5px 15px;
+	color: #fff;
+	border: 1px solid #CCCCCC;
+	margin-top: 20px;
+	font-size: 15px;
+	transition: .7s;
+	background-color: #15505F;
+}
+.button2::before {
+	content: "";
+	background-color: #CCCCCC;
+	top: 52%;
+	left: 180px;
+	width: 1px;
+	height: 18px;
+	position: absolute;
+	transform: rotate(90deg);
+}
+.button2::after {
+	content: "";
+	background-color: #CCC;
+	top: 54%;
+	width: 1px;
+	height: 15px;
+	position: absolute;
+	transform: rotate(90deg);
+	left: 362px;
+}
+/* services area end */
